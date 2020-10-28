@@ -16,7 +16,7 @@ function tabHideShow(infoHeaderTab, infoHeader, infoTabContent, classShow, class
             tabContent[b].classList.add(classShow.slice(1));
         }
     }
-    info.addEventListener('click', function(event) {
+    info.addEventListener('click', (event) => {
         let target = event.target;
          // infoHeaderTab.slice(1) - cut dot 
         if (target && target.classList.contains(infoHeaderTab.slice(1))) {
